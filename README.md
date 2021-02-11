@@ -29,9 +29,17 @@ pip3 install pexels
 ## Usage
 
 ~~~~python
-import pexels
+from pexels import Pexels
+from pexels.models.enums import Orientation, Size
+
+pexels = Pexels()
+video_ids = pexels.get_video_ids(
+    'dogs',
+    videos_orientation=Orientation.HORIZONTAL,  # Optional
+    videos_size=Size.FOUR_K                     # Optional
+)
 ~~~~
 
 ## Dependencies
 
-[amazon-buddy](https://pypi.org/project/amazon-buddy), [kcu](https://pypi.org/project/kcu), [randomua](https://pypi.org/project/randomua), [requests](https://pypi.org/project/requests), [selenium](https://pypi.org/project/selenium), [selenium-firefox](https://pypi.org/project/selenium-firefox), [selenium-youtube](https://pypi.org/project/selenium-youtube)
+[randomua](https://pypi.org/project/randomua), [selenium-firefox](https://pypi.org/project/selenium-firefox)
