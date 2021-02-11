@@ -6,7 +6,6 @@ import time, os
 
 # Pip
 from selenium_firefox import Firefox
-from randomua import RandomUA
 
 # Local
 from .models.enums import Orientation, Size
@@ -22,7 +21,7 @@ class Pexels():
     # -------------------------------------------------------- Public methods -------------------------------------------------------- #
     def __init__(
         self,
-        user_agent: Optional[RandomUA] = None,
+        user_agent: Optional = None,
         proxy: Optional[str] = None
     ):
         self.browser = Firefox(

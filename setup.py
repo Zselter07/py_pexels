@@ -18,7 +18,6 @@ setuptools.setup(
     url='https://github.com/Zselter07/py_pexels',
     packages=setuptools.find_packages(),
     install_requires=[
-        'randomua>=0.0.8',
         'selenium-firefox>=1.0.2'
     ],
     classifiers=[
