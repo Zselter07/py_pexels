@@ -9,8 +9,7 @@ from selenium_firefox import Firefox
 from randomua import RandomUA
 
 # Local
-from .models.enums.orientation import Orientation
-from .models.enums.size import Size
+from .models.enums import Orientation, Size
 
 # ---------------------------------------------------------------------------------------------------------------------------------------- #
 
