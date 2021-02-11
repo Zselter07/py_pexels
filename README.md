@@ -16,7 +16,7 @@
 
 ## Description
 
-U
+Get pexels video ids with selenium firefox
 
 ## Install
 
