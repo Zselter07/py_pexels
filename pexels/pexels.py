@@ -31,7 +31,7 @@ class Pexels():
             proxy=proxy
         )
 
-    def get_videos(
+    def get_video_ids(
         self,
         search_term: str,
         videos_orientation: Orientation = Orientation.HORIZONTAL,
