@@ -10,16 +10,14 @@ else:
 
 setuptools.setup(
     name='pexels',
-    version='0.0.8',
+    version='0.0.9',
     author='Pentek Zsolt',
     description='pexels',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/Zselter07/py_pexels',
     packages=setuptools.find_packages(),
-    install_requires=[
-        'selenium-firefox>=1.0.2'
-    ],
+    install_requires=["selenium_firefox"],
     classifiers=[
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',

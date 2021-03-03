@@ -34,7 +34,7 @@ class Pexels():
         search_term: str,
         videos_orientation: Orientation = Orientation.HORIZONTAL,
         videos_size: Size = Size.FULL_HD,
-        max_videos: int = 35,
+        videos_to_get: int = 35,
         ignored_ids: List[str] = [],
     ) -> List[str]:
         video_ids = []
@@ -42,7 +42,7 @@ class Pexels():
         videos_size = videos_size.value
         page_number = 1
 
-        while len(video_ids) <= max_videos:
+        while len(video_ids) <= videos_to_get:
             url = self.__create_search_url(search_term, videos_orientation, videos_size, page_number)
             self.browser.get(url)
             time.sleep(1.5)
