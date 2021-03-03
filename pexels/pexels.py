@@ -61,6 +61,9 @@ class Pexels():
 
             page_number += 1
 
+        if self.browser is not None:
+            self.browser.quit()
+            
         return video_ids
 
     # ------------------------------------------------------- Private methods -------------------------------------------------------- #

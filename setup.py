@@ -10,7 +10,7 @@ else:
 
 setuptools.setup(
     name='pexels',
-    version='0.0.9',
+    version='0.0.10',
     author='Pentek Zsolt',
     description='pexels',
     long_description=long_description,
